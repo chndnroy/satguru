@@ -4,14 +4,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="flightTestCase.BookHoldTicket">
+      <class name="Portal.scripts.MulticityTripTest">
         <methods>
           <include name="mail"/>
           <include name="postCondition"/>
-          <include name="HoldTicketbooking"/>
+          <include name="MulticityTckt"/>
           <include name="preCondition"/>
         </methods>
-      </class> <!-- flightTestCase.BookHoldTicket -->
+      </class> <!-- Portal.scripts.MulticityTripTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
