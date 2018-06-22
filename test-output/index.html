@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>Regression.xml</span>
+                    <span>Roundtrip.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                    <span class="method-stats">6 methods, 5 failed,  1 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,44 +102,44 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.MulticityTripTest" hash-for-method="MulticityTckt">MulticityTckt</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ScenarioBasedRoundTrip.IndigoRoundSpecialFare" hash-for-method="RoundConnectingFlight">RoundConnectingFlight</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ScenarioBasedRoundTrip.AirArabiRoundtrip" hash-for-method="RoundConnectingFlight">RoundConnectingFlight</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ScenarioBasedRoundTrip.AirArabiaROundMealNBaggage" hash-for-method="RoundConnectingFlight">RoundConnectingFlight</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ScenarioBasedRoundTrip.FLyDubaiROundBaggage" hash-for-method="RoundConnectingFlight">RoundConnectingFlight</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ScenarioBasedRoundTrip.FlyDubaiRoundTrip" hash-for-method="RoundConnectingFlight">RoundConnectingFlight</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.HotelTest" hash-for-method="HotelBook">HotelBook</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ScenarioBasedRoundTrip.AirArabiaRoundtripSpecialBooking" hash-for-method="RoundConnectingFlight">RoundConnectingFlight</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.OnewayFlightTest" hash-for-method="OnewatTckt">OnewatTckt</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.RoundTripTest" hash-for-method="RoundtripTckt">RoundtripTckt</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.FlightPlusInsuranceTest" hash-for-method="RoundtripTckt">RoundtripTckt</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.InsuranceTest" hash-for-method="bookInsurance">bookInsurance</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -154,25 +154,103 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Portal.scripts.MulticityTripTest</span>
+              <span class="class-name">ScenarioBasedRoundTrip.FlyDubaiRoundTrip</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="MulticityTckt">
-                  </a> <!-- MulticityTckt -->
-                  <span class="method-name">MulticityTckt</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+                  <a name="RoundConnectingFlight">
+                  </a> <!-- RoundConnectingFlight -->
+                  <span class="method-name">RoundConnectingFlight</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=65.0.3325.181)
   (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
 System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
-Session ID: 02021fbd83724ddca950e4043840bb6e
-*** Element info: {Using=xpath, value=//span[@data-ng-bind=&apos;flightInformation.bookingRefNo&apos;]}
+Session ID: 49e703add08d9e95cef6d74d192424db
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at Portal.generic.WaitStatementLib.explicitWaitForClickable(WaitStatementLib.java:24)
+	at Portal.Pageobjects.flights.Flightresult.book(Flightresult.java:78)
+	at ScenarioBasedRoundTrip.FlyDubaiRoundTrip.RoundConnectingFlight(FlyDubaiRoundTrip.java:39)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ScenarioBasedRoundTrip.FLyDubaiROundBaggage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RoundConnectingFlight">
+                  </a> <!-- RoundConnectingFlight -->
+                  <span class="method-name">RoundConnectingFlight</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.toString(Unknown Source)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:699)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:267)
+	at Portal.generic.WaitStatementLib.explicitWaitForClickable(WaitStatementLib.java:24)
+	at Portal.Pageobjects.flights.Flightresult.book(Flightresult.java:78)
+	at ScenarioBasedRoundTrip.FLyDubaiROundBaggage.RoundConnectingFlight(FLyDubaiROundBaggage.java:39)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ScenarioBasedRoundTrip.AirArabiaROundMealNBaggage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RoundConnectingFlight">
+                  </a> <!-- RoundConnectingFlight -->
+                  <span class="method-name">RoundConnectingFlight</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li//div[text()=&apos;Air Arabia&apos;]&quot;}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: 005d4f02e6dd8b6819a6f555dd1b81cd
+*** Element info: {Using=xpath, value=//li//div[text()=&apos;Air Arabia&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -187,94 +265,146 @@ Session ID: 02021fbd83724ddca950e4043840bb6e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
-	at Portal.Pageobjects.flights.ConfirmationPage.ConfirmBooking(ConfirmationPage.java:60)
-	at Portal.scripts.MulticityTripTest.MulticityTckt(MulticityTripTest.java:57)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Portal.Pageobjects.flights.FlightPage.preferredRoundAirArabia(FlightPage.java:269)
+	at ScenarioBasedRoundTrip.AirArabiaROundMealNBaggage.RoundConnectingFlight(AirArabiaROundMealNBaggage.java:32)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Portal.scripts.InsuranceTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">ScenarioBasedRoundTrip.IndigoRoundSpecialFare</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="bookInsurance">
-                  </a> <!-- bookInsurance -->
-                  <span class="method-name">bookInsurance</span>
+                  <a name="RoundConnectingFlight">
+                  </a> <!-- RoundConnectingFlight -->
+                  <span class="method-name">RoundConnectingFlight</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;meal0_0&quot;}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: d49f7962bb45e179d1fc6c3369cc0616
+*** Element info: {Using=id, value=meal0_0}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Portal.Pageobjects.flights.PassenegerDetailsPage.SelectBaggageMealAdult1(PassenegerDetailsPage.java:178)
+	at ScenarioBasedRoundTrip.IndigoRoundSpecialFare.RoundConnectingFlight(IndigoRoundSpecialFare.java:54)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Portal.scripts.FlightPlusInsuranceTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">ScenarioBasedRoundTrip.AirArabiRoundtrip</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="RoundtripTckt">
-                  </a> <!-- RoundtripTckt -->
-                  <span class="method-name">RoundtripTckt</span>
+                  <a name="RoundConnectingFlight">
+                  </a> <!-- RoundConnectingFlight -->
+                  <span class="method-name">RoundConnectingFlight</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li//div[text()=&apos;Air Arabia&apos;]&quot;}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: 723b3c2a252f4fb81c88c1d3f9ab491f
+*** Element info: {Using=xpath, value=//li//div[text()=&apos;Air Arabia&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Portal.Pageobjects.flights.FlightPage.preferredRoundAirArabia(FlightPage.java:269)
+	at ScenarioBasedRoundTrip.AirArabiRoundtrip.RoundConnectingFlight(AirArabiRoundtrip.java:32)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Portal.scripts.OnewayFlightTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">ScenarioBasedRoundTrip.AirArabiaRoundtripSpecialBooking</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="OnewatTckt">
-                  </a> <!-- OnewatTckt -->
-                  <span class="method-name">OnewatTckt</span>
+                  <a name="RoundConnectingFlight">
+                  </a> <!-- RoundConnectingFlight -->
+                  <span class="method-name">RoundConnectingFlight</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: 0b621e4fed64dd3bcf688f87ec88dc05
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
+	at Portal.generic.BaseLib.preCondition(BaseLib.java:47)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Portal.scripts.RoundTripTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="RoundtripTckt">
-                  </a> <!-- RoundtripTckt -->
-                  <span class="method-name">RoundtripTckt</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Portal.scripts.HotelTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="HotelBook">
-                  </a> <!-- HotelBook -->
-                  <span class="method-name">HotelBook</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/ttuser10/workspace/Portal_1/Regression.xml</span>
+            <span class="header-content">/home/ttuser10/workspace/Portal_1/Roundtrip.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -284,12 +414,12 @@ Session ID: 02021fbd83724ddca950e4043840bb6e
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Portal.scripts.RoundTripTest&quot;/&gt;
-      &lt;class name=&quot;Portal.scripts.InsuranceTest&quot;/&gt;
-      &lt;class name=&quot;Portal.scripts.HotelTest&quot;/&gt;
-      &lt;class name=&quot;Portal.scripts.OnewayFlightTest&quot;/&gt;
-      &lt;class name=&quot;Portal.scripts.MulticityTripTest&quot;/&gt;
-      &lt;class name=&quot;Portal.scripts.FlightPlusInsuranceTest&quot;/&gt;
+      &lt;class name=&quot;ScenarioBasedRoundTrip.IndigoRoundSpecialFare&quot;/&gt;
+      &lt;class name=&quot;ScenarioBasedRoundTrip.FlyDubaiRoundTrip&quot;/&gt;
+      &lt;class name=&quot;ScenarioBasedRoundTrip.AirArabiRoundtrip&quot;/&gt;
+      &lt;class name=&quot;ScenarioBasedRoundTrip.AirArabiaROundMealNBaggage&quot;/&gt;
+      &lt;class name=&quot;ScenarioBasedRoundTrip.FLyDubaiROundBaggage&quot;/&gt;
+      &lt;class name=&quot;ScenarioBasedRoundTrip.AirArabiaRoundtripSpecialBooking&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -331,34 +461,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'HotelBook')
-data.setCell(0, 2, 'Portal.scripts.HotelTest')
-data.setCell(0, 3, 247713);
+data.setCell(0, 1, 'RoundConnectingFlight')
+data.setCell(0, 2, 'ScenarioBasedRoundTrip.FLyDubaiROundBaggage')
+data.setCell(0, 3, 272884);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'MulticityTckt')
-data.setCell(1, 2, 'Portal.scripts.MulticityTripTest')
-data.setCell(1, 3, 158370);
+data.setCell(1, 1, 'RoundConnectingFlight')
+data.setCell(1, 2, 'ScenarioBasedRoundTrip.IndigoRoundSpecialFare')
+data.setCell(1, 3, 191775);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'OnewatTckt')
-data.setCell(2, 2, 'Portal.scripts.OnewayFlightTest')
-data.setCell(2, 3, 154129);
+data.setCell(2, 1, 'RoundConnectingFlight')
+data.setCell(2, 2, 'ScenarioBasedRoundTrip.AirArabiaROundMealNBaggage')
+data.setCell(2, 3, 139358);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'RoundtripTckt')
-data.setCell(3, 2, 'Portal.scripts.RoundTripTest')
-data.setCell(3, 3, 121724);
+data.setCell(3, 1, 'RoundConnectingFlight')
+data.setCell(3, 2, 'ScenarioBasedRoundTrip.AirArabiRoundtrip')
+data.setCell(3, 3, 136429);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'RoundtripTckt')
-data.setCell(4, 2, 'Portal.scripts.FlightPlusInsuranceTest')
-data.setCell(4, 3, 100212);
+data.setCell(4, 1, 'RoundConnectingFlight')
+data.setCell(4, 2, 'ScenarioBasedRoundTrip.FlyDubaiRoundTrip')
+data.setCell(4, 3, 40995);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'bookInsurance')
-data.setCell(5, 2, 'Portal.scripts.InsuranceTest')
-data.setCell(5, 3, 61371);
+data.setCell(5, 1, 'RoundConnectingFlight')
+data.setCell(5, 2, 'ScenarioBasedRoundTrip.AirArabiaRoundtripSpecialBooking')
+data.setCell(5, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 minutes</span>
+              <span class="suite-total-time">Total running time: 13 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -377,35 +507,35 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Portal.scripts.InsuranceTest</span>
+              <span class="ignored-class-name">ScenarioBasedRoundTrip.FlyDubaiRoundTrip</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">mail</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Portal.scripts.MulticityTripTest</span>
+              <span class="ignored-class-name">ScenarioBasedRoundTrip.FLyDubaiROundBaggage</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">mail</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Portal.scripts.FlightPlusInsuranceTest</span>
+              <span class="ignored-class-name">ScenarioBasedRoundTrip.AirArabiaRoundtripSpecialBooking</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">mail</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Portal.scripts.OnewayFlightTest</span>
+              <span class="ignored-class-name">ScenarioBasedRoundTrip.AirArabiaROundMealNBaggage</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">mail</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Portal.scripts.HotelTest</span>
+              <span class="ignored-class-name">ScenarioBasedRoundTrip.AirArabiRoundtrip</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">mail</span>
                 <br/>
@@ -419,104 +549,113 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Portal.scripts.RoundTripTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ScenarioBasedRoundTrip.AirArabiaRoundtripSpecialBooking</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">RoundConnectingFlight</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ScenarioBasedRoundTrip.IndigoRoundSpecialFare</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">preCondition(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">RoundtripTckt</span>
-                <span class="method-start">7955 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RoundConnectingFlight</span>
+                <span class="method-start">17271 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=RoundtripTckt status=SUCCESS method=RoundTripTest.RoundtripTckt()[pri:0, instance:P...)</span>
-                <span class="method-start">129680 ms</span>
+                <span class="method-name">postCondition([TestResult name=RoundConnectingFlight status=FAILURE method=IndigoRoundSpecialFare.RoundConnectingF...)</span>
+                <span class="method-start">209080 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Portal.scripts.InsuranceTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ScenarioBasedRoundTrip.FlyDubaiRoundTrip</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">preCondition(chrome)</span>
-                <span class="method-start">129682 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">bookInsurance</span>
-                <span class="method-start">135472 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=bookInsurance status=SUCCESS method=InsuranceTest.bookInsurance()[pri:0, instance:P...)</span>
-                <span class="method-start">196845 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Portal.scripts.HotelTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">preCondition(chrome)</span>
-                <span class="method-start">196846 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">HotelBook</span>
-                <span class="method-start">203151 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=HotelBook status=SUCCESS method=HotelTest.HotelBook()[pri:0, instance:Portal.script...)</span>
-                <span class="method-start">450865 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Portal.scripts.OnewayFlightTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">preCondition(chrome)</span>
-                <span class="method-start">450868 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">OnewatTckt</span>
-                <span class="method-start">457242 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=OnewatTckt status=SUCCESS method=OnewayFlightTest.OnewatTckt()[pri:0, instance:Port...)</span>
-                <span class="method-start">611372 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Portal.scripts.MulticityTripTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">preCondition(chrome)</span>
-                <span class="method-start">611372 ms</span>
+                <span class="method-start">209320 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">MulticityTckt</span>
-                <span class="method-start">618110 ms</span>
+                <span class="method-name">RoundConnectingFlight</span>
+                <span class="method-start">215859 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=RoundConnectingFlight status=FAILURE method=FlyDubaiRoundTrip.RoundConnectingFlight...)</span>
+                <span class="method-start">256861 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ScenarioBasedRoundTrip.AirArabiRoundtrip</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(chrome)</span>
+                <span class="method-start">257020 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RoundConnectingFlight</span>
+                <span class="method-start">262161 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=RoundConnectingFlight status=FAILURE method=AirArabiRoundtrip.RoundConnectingFlight...)</span>
+                <span class="method-start">398591 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ScenarioBasedRoundTrip.AirArabiaROundMealNBaggage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(chrome)</span>
+                <span class="method-start">398677 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RoundConnectingFlight</span>
+                <span class="method-start">403299 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=RoundConnectingFlight status=FAILURE method=AirArabiaROundMealNBaggage.RoundConnect...)</span>
+                <span class="method-start">542658 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ScenarioBasedRoundTrip.FLyDubaiROundBaggage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(chrome)</span>
+                <span class="method-start">542765 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RoundConnectingFlight</span>
+                <span class="method-start">547686 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">postCondition([TestResult name=MulticityTckt status=FAILURE method=MulticityTripTest.MulticityTckt()[pri:0, instan...)</span>
-                <span class="method-start">776547 ms</span>
+                <span class="method-name">postCondition([TestResult name=RoundConnectingFlight status=FAILURE method=FLyDubaiROundBaggage.RoundConnectingFli...)</span>
+                <span class="method-start">820571 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Portal.scripts.FlightPlusInsuranceTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ScenarioBasedRoundTrip.AirArabiaRoundtripSpecialBooking</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">preCondition(chrome)</span>
-                <span class="method-start">776639 ms</span>
+                <span class="method-start">820586 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">RoundtripTckt</span>
-                <span class="method-start">782393 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=RoundtripTckt status=SUCCESS method=FlightPlusInsuranceTest.RoundtripTckt()[pri:0, ...)</span>
-                <span class="method-start">882606 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Portal.scripts.RoundTripTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ScenarioBasedRoundTrip.IndigoRoundSpecialFare</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">mail</span>
-                <span class="method-start">882765 ms</span>
+                <span class="method-start">821859 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
