@@ -54,7 +54,7 @@ public class HotelCreditCard extends Login{
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
 		hcsp.ClickOnNoThanksBtn();
 		HotelPassengerDetailsPage hpdp=new HotelPassengerDetailsPage(driver);
-		 hpdp.searchAdultPass(ExcelUtils.readData("Sheet3", 3,1),driver);
+		 hpdp.searchAdultPass(ExcelUtils.readData("Sheet3", 3,1));
 		 PaymentPage pp=new PaymentPage(driver);
 		 System.out.println("Payment page is open");
 		 pp.CreditCardPay(driver);

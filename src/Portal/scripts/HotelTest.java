@@ -43,20 +43,20 @@ public class HotelTest extends Login {
 
 		System.out.println("Info page is open");
 		HotelInfoPage hip = new HotelInfoPage(driver);
-//		WaitStatementLib.implicitWaitforMinutes(driver, 2);
+		Thread.sleep(3000);
 		hip.ClikOnBukBtn(driver);
 		System.out.println("Book button clicked on info page");
 		HotelDetailsPage hdp = new HotelDetailsPage(driver);
-		WaitStatementLib.implicitWaitforMinutes(driver, 2);
+//		WaitStatementLib.implicitWaitforMinutes(driver, 2);
 		hdp.clickOnContinue();
 		System.out.println("Details page is open");
 		HotelCrossSellingPathPage hcsp = new HotelCrossSellingPathPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
 		hcsp.ClickOnNoThanksBtn();
 		HotelPassengerDetailsPage hpdp = new HotelPassengerDetailsPage(driver);
-		hpdp.searchAdultPass(ExcelUtils.readData("Sheet3", 3, 1), driver);
+		hpdp.searchAdultPass("9");
 		Thread.sleep(5000);
-		hpdp.searchChild1Passenger("c");
+		hpdp.searchChild1Passenger("7");
 		Thread.sleep(3000);
 		hpdp.clickBookBtn();
 		PaymentPage pp = new PaymentPage(driver);

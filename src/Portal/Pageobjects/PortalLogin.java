@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class PortalLogin extends Basepage{
-	@FindBy(id="Agency Code")
+	@FindBy(id="agencyCodeMain")
 	private WebElement agecyField;
 	@FindBy(id="userAlias")
 	private WebElement userfield;

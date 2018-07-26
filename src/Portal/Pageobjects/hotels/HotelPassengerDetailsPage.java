@@ -22,6 +22,12 @@ public class HotelPassengerDetailsPage {
 	private WebElement BookButn;
 	@FindBy(id="childPax")
 	private WebElement SelectChild1Passenger;
+	@FindBy(xpath="//p[contains(text(),'Age entered before does not match with DOB entered. Please input correct Age.')]")
+	private WebElement DOBerror;
+	@FindBy(xpath="//a[contains(text(),'Change Date of birth')]")
+	private WebElement changeDOBBtn;
+	@FindBy(xpath="//a[text()='1']")
+	private WebElement changedate;
 
 	
 	public HotelPassengerDetailsPage(WebDriver driver) {
@@ -29,7 +35,7 @@ public class HotelPassengerDetailsPage {
 	}
 
 	WebDriver driver;
-	public void searchAdultPass(String passengerName, WebDriver driver) {
+	public void searchAdultPass(String passengerName) {
 		SelectAdultPassenger1Btn.click();
 
 		SearchBox.sendKeys(passengerName);
@@ -43,7 +49,7 @@ public class HotelPassengerDetailsPage {
 
 		SelectChild1Passenger.click();
 		Thread.sleep(5000);
-		SearchBox.sendKeys("child");
+		SearchBox.sendKeys(childName);
 		Thread.sleep(3000);
 		SearchBtn.click();
 
@@ -56,5 +62,15 @@ public class HotelPassengerDetailsPage {
 		
 		BookButn.click();
 		System.out.println("Book button clicked on Passenger details page");
+		if(DOBerror.isDisplayed())
+		{
+			changeDOBBtn.click();
+			changedate.click();
+			BookButn.click();
+		}
+		else {
+			System.out.println("no ERROR of DOB found");
+		}
 	}
+	
 }

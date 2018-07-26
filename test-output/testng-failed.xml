@@ -4,54 +4,30 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="ScenarioBasedRoundTrip.FlyDubaiRoundTrip">
+      <class name="Portal.scripts.InsuranceTest">
         <methods>
-          <include name="mail"/>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-          <include name="RoundConnectingFlight"/>
-        </methods>
-      </class> <!-- ScenarioBasedRoundTrip.FlyDubaiRoundTrip -->
-      <class name="ScenarioBasedRoundTrip.AirArabiaRoundtripSpecialBooking">
-        <methods>
-          <include name="mail"/>
-          <include name="postCondition"/>
-          <include name="RoundConnectingFlight"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- ScenarioBasedRoundTrip.AirArabiaRoundtripSpecialBooking -->
-      <class name="ScenarioBasedRoundTrip.FLyDubaiROundBaggage">
-        <methods>
-          <include name="mail"/>
-          <include name="postCondition"/>
-          <include name="RoundConnectingFlight"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- ScenarioBasedRoundTrip.FLyDubaiROundBaggage -->
-      <class name="ScenarioBasedRoundTrip.AirArabiaROundMealNBaggage">
-        <methods>
-          <include name="mail"/>
-          <include name="postCondition"/>
-          <include name="RoundConnectingFlight"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- ScenarioBasedRoundTrip.AirArabiaROundMealNBaggage -->
-      <class name="ScenarioBasedRoundTrip.AirArabiRoundtrip">
-        <methods>
-          <include name="RoundConnectingFlight"/>
+          <include name="bookInsurance"/>
           <include name="mail"/>
           <include name="postCondition"/>
           <include name="preCondition"/>
         </methods>
-      </class> <!-- ScenarioBasedRoundTrip.AirArabiRoundtrip -->
-      <class name="ScenarioBasedRoundTrip.IndigoRoundSpecialFare">
+      </class> <!-- Portal.scripts.InsuranceTest -->
+      <class name="Portal.scripts.FlightPlusInsuranceTest">
         <methods>
           <include name="mail"/>
           <include name="postCondition"/>
+          <include name="RoundtripTckt"/>
           <include name="preCondition"/>
-          <include name="RoundConnectingFlight"/>
         </methods>
-      </class> <!-- ScenarioBasedRoundTrip.IndigoRoundSpecialFare -->
+      </class> <!-- Portal.scripts.FlightPlusInsuranceTest -->
+      <class name="Portal.scripts.HotelTest">
+        <methods>
+          <include name="mail"/>
+          <include name="postCondition"/>
+          <include name="HotelBook"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- Portal.scripts.HotelTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

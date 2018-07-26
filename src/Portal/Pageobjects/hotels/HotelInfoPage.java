@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import Portal.generic.WaitStatementLib;
 
 public class HotelInfoPage {
-	@FindBy(xpath = "(//a[contains(text(),'Book')])[1]")
+	@FindBy(xpath = "//a[contains(text(),'Book')]")
 	private WebElement DetailBookbtn;
 	@FindBy(xpath = "//input[@id='save_quote']")
 	private WebElement saveQuote;
@@ -37,9 +37,10 @@ public class HotelInfoPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void ClikOnBukBtn(WebDriver driver)  {
-		WebDriverWait ww=new WebDriverWait(driver, 60);
-		ww.until(ExpectedConditions.invisibilityOf(loader));
+	public void ClikOnBukBtn(WebDriver driver) throws InterruptedException  {
+		Thread.sleep(2000);
+//		WebDriverWait ww=new WebDriverWait(driver, 60);
+//		ww.until(ExpectedConditions.invisibilityOf(loader));
 					   DetailBookbtn.click();
 				}
 			

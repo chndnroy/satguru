@@ -12,7 +12,7 @@ import Portal.generic.DropdownLib;
 import Portal.generic.WaitStatementLib;
 
 public class Hotelresultspage {
-	@FindBy(xpath="(//a[contains(text(),'Book')])[1]")
+	@FindBy(xpath="(//div[@class='book-now']//a)[1]")
 	private WebElement Bookbtn;
 	@FindBy(xpath="//span[@class='modify-search-btn btn orange-trans fa-css']")
 	private WebElement ModifyButton;

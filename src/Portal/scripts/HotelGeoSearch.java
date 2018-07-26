@@ -54,7 +54,7 @@ public class HotelGeoSearch extends Login {
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
 		hcsp.ClickOnNoThanksBtn();
 		HotelPassengerDetailsPage hpdp = new HotelPassengerDetailsPage(driver);
-		hpdp.searchAdultPass(ExcelUtils.readData("Sheet3", 3, 1), driver);
+		hpdp.searchAdultPass(ExcelUtils.readData("Sheet3", 3, 1));
 		Thread.sleep(5000);
 		hpdp.searchChild1Passenger("c");
 		Thread.sleep(3000);
