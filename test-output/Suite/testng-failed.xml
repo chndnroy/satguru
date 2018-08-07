@@ -4,14 +4,6 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Portal.scripts.InsuranceTest">
-        <methods>
-          <include name="bookInsurance"/>
-          <include name="mail"/>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- Portal.scripts.InsuranceTest -->
       <class name="Portal.scripts.FlightPlusInsuranceTest">
         <methods>
           <include name="mail"/>

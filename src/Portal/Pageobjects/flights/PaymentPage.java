@@ -11,6 +11,7 @@ import Portal.generic.ElementCheck;
 import Portal.generic.WaitStatementLib;
 
 public class PaymentPage extends Basepage {
+	
 	@FindBy(xpath = "//input[@value='Pay']")
 	private WebElement WalletPayBtn;
 
@@ -44,12 +45,20 @@ public class PaymentPage extends Basepage {
 	private WebElement Zipfield;
 	@FindBy(xpath = "//p[text()='Credit Card']")
 	private WebElement CreditCardBtn;
+	@FindBy (xpath="//input[@name='phoneNumber']")
+	private WebElement phoneNum;
+	@FindBy (xpath="//select[@id='country']")
+	private WebElement countryfield;
+	@FindBy(xpath="//div[contains(text(),'Billing')]")
+	private WebElement threeGpayText;
+	
 
 	public PaymentPage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
 	}
 WebDriver driver;
+
 	public void walletPay() {
 		
 		if (WalletPayBtn.isEnabled())
@@ -62,7 +71,7 @@ WebDriver driver;
 		CreditCardBtn.isEnabled();
 		CreditCardBtn.click();
 		System.out.println("Credit card payment page is open");
-		boolean a = ElementCheck.textPresence("street", driver);
+	boolean a = ElementCheck.textPresence("street", driver);
 		if (a)
 		{
 			System.out.println("cybersource page is open");
@@ -83,14 +92,23 @@ WebDriver driver;
 		}
          else {
 			System.out.println("3g page is open");
+	        threeGpayText.isDisplayed();
+
 
 			CardholderName.sendKeys("chandan");
-			CardNum.sendKeys("5424000000000015");
-			DropdownLib.Choosebyvalue(driver, ExpMnthDrpdwn, "12");
-			DropdownLib.Choosebytext(driver, ExpYrDrpdwn, "2018");
-			CvvField.sendKeys("111");
+			LastNamefield.sendKeys("roy");
+			Emailfield.sendKeys("c@gmail.com");
+
+			phoneNum.sendKeys("9999999999");
+			Addressfield.sendKeys("wqdddsSFDS");
+			Cityfield.sendKeys("sadsda");
+			DropdownLib.Choosebytext(driver, countryfield, "India");
+			Zipfield.sendKeys("94043");
+			System.out.println("Billing Deails ebtered.");
 			Thread.sleep(5000);
 			PayBtn.click();
+			WaitStatementLib.implicitWaitforMinutes(driver, 2);
+			
 		}
 
 	}
