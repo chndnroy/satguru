@@ -4,22 +4,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Portal.scripts.FlightPlusInsuranceTest">
+      <class name="Portal.scripts.creditcard.OnewayCreditCard">
         <methods>
           <include name="mail"/>
           <include name="postCondition"/>
-          <include name="RoundtripTckt"/>
+          <include name="OnewayTckt"/>
           <include name="preCondition"/>
         </methods>
-      </class> <!-- Portal.scripts.FlightPlusInsuranceTest -->
-      <class name="Portal.scripts.HotelTest">
-        <methods>
-          <include name="mail"/>
-          <include name="postCondition"/>
-          <include name="HotelBook"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- Portal.scripts.HotelTest -->
+      </class> <!-- Portal.scripts.creditcard.OnewayCreditCard -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="FLightSaveQuoteTestCases.MulticityDetailsPageSaveQuote"/>
+      <class name="Portal.scripts.OnewayFlightTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
