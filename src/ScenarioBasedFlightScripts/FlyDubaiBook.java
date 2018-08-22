@@ -26,6 +26,35 @@ public class FlyDubaiBook extends Login {
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
 		fp.Scenario1Oneway(ExcelUtils.readData("Sheet3", 0, 5), ExcelUtils.readData("Sheet3", 1, 5));
 		fp.preferredAirlineselect(ExcelUtils.readData("sheet3", 2, 5));
+		
 		fp.PassengerCombination1(driver);
+		System.out.println("Oneway input is successful");
+		Flightresult fr = new Flightresult(driver);
+		WaitStatementLib.implicitWaitforMinutes(driver, 4);
+		fr.book(driver);
+		System.out.println("Book button clicked on Search result page");
+		CrossSellingPage csp = new CrossSellingPage(driver);
+		WaitStatementLib.implicitWaitforMinutes(driver, 2);
+		csp.noThanks();
+		FlightDetailsPage fdp = new FlightDetailsPage(driver);
+		WaitStatementLib.implicitWaitforMinutes(driver, 2);
+		fdp.OnewaydetailPage();
+		PassenegerDetailsPage pdp = new PassenegerDetailsPage(driver);
+		WaitStatementLib.implicitWaitforMinutes(driver, 2);
+		pdp.selectPassenger(driver);
+		Thread.sleep(5000);
+		pdp.selectAdultPassenger2(driver);
+		Thread.sleep(5000);
+		pdp.selectChildPassenger1(driver);
+		Thread.sleep(5000);
+		
+		pdp.ProceedFrBuk();
+		PaymentPage pp = new PaymentPage(driver);
+		WaitStatementLib.implicitWaitforMinutes(driver, 2);
+		pp.walletPay();
+		System.out.println("Wallet payment is done");
+		ConfirmationPage cp = new ConfirmationPage(driver);
+		WaitStatementLib.implicitWaitforMinutes(driver, 1);
+		cp.ConfirmBooking();
 
 	}}

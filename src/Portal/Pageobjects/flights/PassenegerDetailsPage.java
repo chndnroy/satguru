@@ -116,7 +116,7 @@ public class PassenegerDetailsPage {
 		if (SelectAdultPassengerBtn.isEnabled()) {
 
 			SelectAdultPassengerBtn.click();
-			SearchBox.sendKeys("adult");
+			SearchBox.sendKeys("9");
 			SearchBtn.click();
 
 			FirstResult.click();
@@ -130,7 +130,7 @@ public class PassenegerDetailsPage {
 
 		SelectAdultPassenger2Btn.click();
 		Thread.sleep(3000);
-		SearchBox.sendKeys("a");
+		SearchBox.sendKeys("8");
 		WaitStatementLib.explicitWaitForClickable(driver, 20, SearchBtn);
 		SearchBtn.click();
 
@@ -145,7 +145,7 @@ public class PassenegerDetailsPage {
 
 		SelectChild1PassengerBtn.click();
 		Thread.sleep(3000);
-		SearchBox.sendKeys("c");
+		SearchBox.sendKeys("9");
 		WaitStatementLib.explicitWaitForClickable(driver, 20, SearchBtn);
 		SearchBtn.click();
 

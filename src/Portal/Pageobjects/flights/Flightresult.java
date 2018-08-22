@@ -39,8 +39,7 @@ public class Flightresult {
 	public static WebElement downfare;
 	@FindBy(xpath = "//p[@strong='new-price red']//strong")
 	public static WebElement upFare;
-	@FindBy(xpath = "//p[contains(text(),'Change')]/../..//a[contains(text(),'Book Now')]")
-	private WebElement BookFlyDubaiBtn;
+	
 	@FindBy(xpath = "//img[@data-ng-show='whiteMarkup']")
 	private WebElement OntheFlyMarkupBtn;
 	@FindBy(xpath = "//div[@id='up']//div[@class='modal-body")
@@ -72,6 +71,8 @@ public class Flightresult {
 	@FindBy(xpath = "//a[text()='All Airlines']")
 	private WebElement AllAirline;
 
+	@FindBy(xpath="//div[@data-name='OFFER']//p[contains(text(),'Pay To Change')]")
+	private WebElement FLydubaiBukbtn;
 	WebDriver driver;
 
 	public void book(WebDriver driver) {
@@ -114,9 +115,8 @@ public class Flightresult {
 	}
 
 	public void BookFlydubaiBtn(WebDriver driver) {
-		OntheFlyMarkupBtn.click();
 		WaitStatementLib.implicitWaitforSeconds(driver, 10);
-		BookFlyDubaiBtn.click();
+		FLydubaiBukbtn.click();
 
 	}
 

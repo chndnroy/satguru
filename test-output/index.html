@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>TestFlight.xml</span>
+                    <span>js.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.creditcard.OnewayCreditCard" hash-for-method="OnewayTckt">OnewayTckt</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.InsuranceTest" hash-for-method="bookInsurance">bookInsurance</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -120,15 +120,15 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Portal.scripts.creditcard.OnewayCreditCard</span>
+              <span class="class-name">Portal.scripts.InsuranceTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="OnewayTckt">
-                  </a> <!-- OnewayTckt -->
-                  <span class="method-name">OnewayTckt</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@alt=&apos;flight-icon&apos;]&quot;}
+                  <a name="bookInsurance">
+                  </a> <!-- bookInsurance -->
+                  <span class="method-name">bookInsurance</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Pay&apos;]&quot;}
   (Session info: chrome=67.0.3396.99)
   (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -137,8 +137,8 @@ Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &a
 System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
-Session ID: cb02e90845789a7e56f0f218e8dd7e55
-*** Element info: {Using=xpath, value=//img[@alt=&apos;flight-icon&apos;]}
+Session ID: 10609786c70424e3fb014f83bed2d241
+*** Element info: {Using=xpath, value=//input[@value=&apos;Pay&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -153,9 +153,9 @@ Session ID: cb02e90845789a7e56f0f218e8dd7e55
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at Portal.Pageobjects.Basepage.Flight(Basepage.java:33)
-	at Portal.scripts.creditcard.OnewayCreditCard.OnewayTckt(OnewayCreditCard.java:25)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at Portal.Pageobjects.flights.PaymentPage.walletPay(PaymentPage.java:64)
+	at Portal.scripts.InsuranceTest.bookInsurance(InsuranceTest.java:42)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -165,7 +165,7 @@ Session ID: cb02e90845789a7e56f0f218e8dd7e55
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/ttuser10/workspace/Portal_1/TestFlight.xml</span>
+            <span class="header-content">/home/ttuser10/workspace/Portal_1/js.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -175,7 +175,7 @@ Session ID: cb02e90845789a7e56f0f218e8dd7e55
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Portal.scripts.creditcard.OnewayCreditCard&quot;/&gt;
+      &lt;class name=&quot;Portal.scripts.InsuranceTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -217,14 +217,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'OnewayTckt')
-data.setCell(0, 2, 'Portal.scripts.creditcard.OnewayCreditCard')
-data.setCell(0, 3, 4662);
+data.setCell(0, 1, 'bookInsurance')
+data.setCell(0, 2, 'Portal.scripts.InsuranceTest')
+data.setCell(0, 3, 36751);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -250,7 +250,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Portal.scripts.creditcard.OnewayCreditCard</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Portal.scripts.InsuranceTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">preCondition(chrome)</span>
                 <span class="method-start">0 ms</span>
@@ -258,16 +258,16 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">OnewayTckt</span>
-                <span class="method-start">3339 ms</span>
+                <span class="method-name">bookInsurance</span>
+                <span class="method-start">5673 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=OnewayTckt status=FAILURE method=OnewayCreditCard.OnewayTckt()[pri:0, instance:Port...)</span>
-                <span class="method-start">8005 ms</span>
+                <span class="method-name">postCondition([TestResult name=bookInsurance status=FAILURE method=InsuranceTest.bookInsurance()[pri:0, instance:P...)</span>
+                <span class="method-start">42431 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">mail</span>
-                <span class="method-start">8176 ms</span>
+                <span class="method-start">42625 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

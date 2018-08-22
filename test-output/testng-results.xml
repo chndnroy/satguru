@@ -17,12 +17,12 @@
       <![CDATA[Browser closed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="8173" started-at="2018-08-21T10:40:35Z" finished-at="2018-08-21T10:40:43Z">
+  <suite name="Suite" duration-ms="42617" started-at="2018-08-22T09:37:16Z" finished-at="2018-08-22T09:37:59Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="8173" started-at="2018-08-21T10:40:35Z" finished-at="2018-08-21T10:40:43Z">
-      <class name="Portal.scripts.creditcard.OnewayCreditCard">
-        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:Portal.scripts.creditcard.OnewayCreditCard@307f6b8c]" name="preCondition" is-config="true" duration-ms="3338" started-at="2018-08-21T10:40:35Z" finished-at="2018-08-21T10:40:38Z">
+    <test name="Test" duration-ms="42617" started-at="2018-08-22T09:37:16Z" finished-at="2018-08-22T09:37:59Z">
+      <class name="Portal.scripts.InsuranceTest">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:Portal.scripts.InsuranceTest@307f6b8c]" name="preCondition" is-config="true" duration-ms="5673" started-at="2018-08-22T09:37:16Z" finished-at="2018-08-22T09:37:22Z">
           <params>
             <param index="0">
               <value>
@@ -39,10 +39,10 @@
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="FAIL" signature="OnewayTckt()[pri:0, instance:Portal.scripts.creditcard.OnewayCreditCard@307f6b8c]" name="OnewayTckt" duration-ms="4662" started-at="2018-08-21T10:40:38Z" finished-at="2018-08-21T10:40:43Z">
+        <test-method status="FAIL" signature="bookInsurance()[pri:0, instance:Portal.scripts.InsuranceTest@307f6b8c]" name="bookInsurance" duration-ms="36751" started-at="2018-08-22T09:37:22Z" finished-at="2018-08-22T09:37:58Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@alt='flight-icon']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='Pay']"}
   (Session info: chrome=67.0.3396.99)
   (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -51,11 +51,11 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:15.3
 System info: host: 'ttuser10-Lenovo-S510', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.10.0-42-generic', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
-Session ID: cb02e90845789a7e56f0f218e8dd7e55
-*** Element info: {Using=xpath, value=//img[@alt='flight-icon']}]]>
+Session ID: 10609786c70424e3fb014f83bed2d241
+*** Element info: {Using=xpath, value=//input[@value='Pay']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@alt='flight-icon']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='Pay']"}
   (Session info: chrome=67.0.3396.99)
   (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -64,8 +64,8 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:15.3
 System info: host: 'ttuser10-Lenovo-S510', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.10.0-42-generic', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
-Session ID: cb02e90845789a7e56f0f218e8dd7e55
-*** Element info: {Using=xpath, value=//img[@alt='flight-icon']}
+Session ID: 10609786c70424e3fb014f83bed2d241
+*** Element info: {Using=xpath, value=//input[@value='Pay']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -84,9 +84,9 @@ at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy11.click(Unknown Source)
-at Portal.Pageobjects.Basepage.Flight(Basepage.java:33)
-at Portal.scripts.creditcard.OnewayCreditCard.OnewayTckt(OnewayCreditCard.java:25)
+at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+at Portal.Pageobjects.flights.PaymentPage.walletPay(PaymentPage.java:64)
+at Portal.scripts.InsuranceTest.bookInsurance(InsuranceTest.java:42)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -117,12 +117,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OnewayTckt -->
-        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:Portal.scripts.creditcard.OnewayCreditCard@307f6b8c]" name="postCondition" is-config="true" duration-ms="151" started-at="2018-08-21T10:40:43Z" finished-at="2018-08-21T10:40:43Z">
+        </test-method> <!-- bookInsurance -->
+        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:Portal.scripts.InsuranceTest@307f6b8c]" name="postCondition" is-config="true" duration-ms="170" started-at="2018-08-22T09:37:58Z" finished-at="2018-08-22T09:37:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=OnewayTckt status=FAILURE method=OnewayCreditCard.OnewayTckt()[pri:0, instance:Portal.scripts.creditcard.OnewayCreditCard@307f6b8c] output={null}]]]>
+                <![CDATA[[TestResult name=bookInsurance status=FAILURE method=InsuranceTest.bookInsurance()[pri:0, instance:Portal.scripts.InsuranceTest@307f6b8c] output={null}]]]>
               </value>
             </param>
           </params>
@@ -138,11 +138,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="mail()[pri:0, instance:Portal.scripts.creditcard.OnewayCreditCard@307f6b8c]" name="mail" is-config="true" duration-ms="5" started-at="2018-08-21T10:40:43Z" finished-at="2018-08-21T10:40:43Z">
+        <test-method status="PASS" signature="mail()[pri:0, instance:Portal.scripts.InsuranceTest@307f6b8c]" name="mail" is-config="true" duration-ms="5" started-at="2018-08-22T09:37:59Z" finished-at="2018-08-22T09:37:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mail -->
-      </class> <!-- Portal.scripts.creditcard.OnewayCreditCard -->
+      </class> <!-- Portal.scripts.InsuranceTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
