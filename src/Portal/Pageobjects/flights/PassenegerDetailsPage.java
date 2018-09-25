@@ -1,5 +1,7 @@
 package Portal.Pageobjects.flights;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.List;
 
 import javax.xml.xpath.XPath;
@@ -13,6 +15,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 import Portal.generic.DropdownLib;
 import Portal.generic.ExcelUtils;
@@ -48,7 +52,7 @@ public class PassenegerDetailsPage {
 	private WebElement selepsngNtFound;
 	@FindBy(xpath = "//div[@ id='select-passengers-modal']//button[@class='close']")
 	private WebElement CloseSelePsngrPopup;
-	
+
 	@FindBy(id = "meal0_0")
 	private WebElement mealP1DrpDwn;
 	@FindBy(id = "meal1_0")
@@ -67,10 +71,9 @@ public class PassenegerDetailsPage {
 	private WebElement Baggage2DrpDwn;
 	@FindBy(id = "bagg_2")
 	private WebElement Baggage3DrpDwn;
-	@FindBy(xpath="//input[@value='Book & Hold']")
+	@FindBy(xpath = "//input[@value='Book & Hold']")
 	private WebElement BookNHold;
 
-	
 	@FindBy(xpath = "//input[@value='Save Quote']")
 	private WebElement SaveQuote;
 	@FindBy(xpath = "//h4[text()='SAVE QUOTE']")
@@ -87,17 +90,18 @@ public class PassenegerDetailsPage {
 	private WebElement email1;
 	@FindBy(xpath = "//div[@data-ng-bind-html='resultMessageQuotation']//b")
 	private WebElement QuotationNumber;
-	@FindBy(xpath="//a[text()='Select Seat']")
+	@FindBy(xpath = "//a[text()='Select Seat']")
 	private WebElement Selectseat;
-	@FindBy(xpath="//h4[text()='Seat Map']")
+	@FindBy(xpath = "//h4[text()='Seat Map']")
 	private WebElement seatMappopup;
-	@FindBy(xpath="//input[@id='change_0_0']")
+	@FindBy(xpath = "//input[@id='change_0_0']")
 	private WebElement selectFirstpassenger;
-	
+
 	public PassenegerDetailsPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	SoftAssert sa=new SoftAssert();
 
 	public void searchAdultPass(String Adult1, WebDriver driver) throws InterruptedException {
 		if (SelectAdultPassengerBtn.isEnabled()) {
@@ -155,122 +159,169 @@ public class PassenegerDetailsPage {
 
 	}
 
-//	public void selectInfant1Passenger() throws InterruptedException {
-//		WaitStatementLib.explicitWaitForClickable(driver, 20, SelectInfant1PassengerBtn);
-//
-//		SelectInfant1PassengerBtn.click();
-//		Thread.sleep(3000);
-//		SearchBox.sendKeys("i");
-//		WaitStatementLib.explicitWaitForClickable(driver, 20, SearchBtn);
-//		SearchBtn.click();
-//
-//		FirstResult.click();
-//		SelectFirstResult.click();
-//		System.out.println(" first infant selected from Select Passenger");
-//		WaitStatementLib.explicitWaitForClickable(driver, 2, InfantAssignTo);
-//		InfantAssignTo.click();
-//		InfantAssignTo.sendKeys(Keys.ARROW_DOWN);
-//		InfantAssignTo.sendKeys(Keys.ENTER);
-//
-//	}
+	// public void selectInfant1Passenger() throws InterruptedException {
+	// WaitStatementLib.explicitWaitForClickable(driver, 20,
+	// SelectInfant1PassengerBtn);
+	//
+	// SelectInfant1PassengerBtn.click();
+	// Thread.sleep(3000);
+	// SearchBox.sendKeys("i");
+	// WaitStatementLib.explicitWaitForClickable(driver, 20, SearchBtn);
+	// SearchBtn.click();
+	//
+	// FirstResult.click();
+	// SelectFirstResult.click();
+	// System.out.println(" first infant selected from Select Passenger");
+	// WaitStatementLib.explicitWaitForClickable(driver, 2, InfantAssignTo);
+	// InfantAssignTo.click();
+	// InfantAssignTo.sendKeys(Keys.ARROW_DOWN);
+	// InfantAssignTo.sendKeys(Keys.ENTER);
+	//
+	// }
 
 	public void SelectBaggageMealAdult1() throws InterruptedException {
-		mealP1DrpDwn.click();
-		DropdownLib.SelectByTextFromDropdown(driver, mealP1DrpDwn, 1);
-		WaitStatementLib.explicitWaitForClickable(driver, 2, selectBaggageP1True);
+		try {sa.assertTrue(mealP1DrpDwn.isDisplayed(), "meal not aappearing");
+			mealP1DrpDwn.click();
+			DropdownLib.SelectByTextFromDropdown(driver, mealP1DrpDwn, 1);
+		} catch (Exception e) {
+			System.out.println("No meal is appearing");
+		}
 
-		selectBaggageP1True.click();
-		Thread.sleep(2000);
-		DropdownLib.SelectByTextFromDropdown(driver, Baggage1DrpDwn, 1);
+		// WaitStatementLib.explicitWaitForClickable(driver, 2,
+		// selectBaggageP1True);
+		try {
+			selectBaggageP1True.isDisplayed();
+			selectBaggageP1True.click();
+			Thread.sleep(2000);
+			DropdownLib.SelectByTextFromDropdown(driver, Baggage1DrpDwn, 1);
+		} catch (Exception e) {
+			e.getMessage();
+			System.out.println("No baggage is appearing");
+		}
 	}
 
 	public void SelectBaggageMealAdult2() throws InterruptedException {
-		mealP2DrpDwn.click();
-		DropdownLib.SelectByTextFromDropdown(driver, mealP2DrpDwn, 1);
-		WaitStatementLib.explicitWaitForClickable(driver, 2, selectBaggageP2True);
+		try {
+			mealP2DrpDwn.isDisplayed();
+			mealP2DrpDwn.click();
+			DropdownLib.SelectByTextFromDropdown(driver, mealP2DrpDwn, 1);
+		} catch (Exception e) {
+			e.getMessage();
+			System.out.println("No meal is appearing");
 
-		selectBaggageP2True.click();
-		Thread.sleep(3000);
-		DropdownLib.SelectByTextFromDropdown(driver, Baggage2DrpDwn, 1);
+		}
+		try {
+
+			selectBaggageP2True.click();
+			Thread.sleep(3000);
+			DropdownLib.SelectByTextFromDropdown(driver, Baggage2DrpDwn, 1);
+		} catch (Exception e1) {
+			e1.getMessage();
+			System.out.println("No baggage is appearing");
+		}
 	}
 
 	public void SelectBaggageMealchild1() throws InterruptedException {
-		DropdownLib.SelectByTextFromDropdown(driver, mealP3DrpDwn, 1);
-		WaitStatementLib.explicitWaitForClickable(driver, 2, selectBaggageP3True);
+		try {
+			mealP3DrpDwn.isDisplayed();
+			mealP3DrpDwn.click();
+			DropdownLib.SelectByTextFromDropdown(driver, mealP3DrpDwn, 1);
+		} catch (Exception e) {
+			e.getMessage();
+			System.out.println("No meal is appearing");
 
-		selectBaggageP3True.click();
-		Thread.sleep(3000);
-		DropdownLib.SelectByTextFromDropdown(driver, Baggage3DrpDwn, 1);
-	}
-	public void SelectFlyDubaiBaggageAdult1()
-	{
-		selectBaggageP1True.click();
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
-		DropdownLib.SelectByTextFromDropdown(driver, Baggage1DrpDwn, 1);
+		try {
+
+			selectBaggageP3True.click();
+			Thread.sleep(3000);
+
+			DropdownLib.SelectByTextFromDropdown(driver, Baggage3DrpDwn, 1);
+		} catch (Exception e1) {
+			e1.getMessage();
+			System.out.println("No baggage is appeaaring");
+		}
 	}
+
+	public void SelectFlyDubaiBaggageAdult1() {
+		try {
+			selectBaggageP1True.click();
+
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			DropdownLib.SelectByTextFromDropdown(driver, Baggage1DrpDwn, 1);
+		} catch (Exception e1) {
+			e1.getMessage();
+		}
+	}
+
 	public void SelectFlyDubaiBaggageAdult2() {
-		
-		selectBaggageP2True.click();
 		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+
+			selectBaggageP2True.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			DropdownLib.SelectByTextFromDropdown(driver, Baggage2DrpDwn, 1);
+		} catch (Exception e1) {
+			e1.getMessage();
 		}
-		DropdownLib.SelectByTextFromDropdown(driver, Baggage2DrpDwn, 1);
 	}
+
 	public void SelectFlyDubaiBaggagechild1() {
-		selectBaggageP3True.click();
 		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			selectBaggageP3True.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			DropdownLib.SelectByTextFromDropdown(driver, Baggage3DrpDwn, 1);
+		} catch (Exception e1) {
+			e1.getMessage();
 		}
-		DropdownLib.SelectByTextFromDropdown(driver, Baggage3DrpDwn, 1);
 	}
 
 	public void ProceedFrBuk() {
 		BookButn.click();
 	}
 
-	public void bookNhold(){
-		if(BookNHold.isEnabled())
-		BookNHold.click();
-}
+	public void bookNhold() {
+		if (BookNHold.isEnabled())
+			BookNHold.click();
+	}
+
 	public String PassengerPageSaveQuote(String passenger) {
 		SaveQuote.click();
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
-		}		
+		}
 
 		if (SaveQuotePopup.hashCode() != 0) {
 			System.out.println("Save Quote Popup is displaying");
-			
+
 			saveQuoteButton.click();
 			WaitStatementLib.implicitWaitforSeconds(driver, 30);
 			if (QuotationNumber.isDisplayed())
 				System.out.println("Quotation saved with number " + QuotationNumber.getText());
-			
 
 		}
 		return QuotationNumber.getText();
 
 	}
+
 	public void SSRLCC() {
 		Selectseat.click();
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOf(seatMappopup));
 		selectFirstpassenger.click();
-		
-		
+
 	}
 }

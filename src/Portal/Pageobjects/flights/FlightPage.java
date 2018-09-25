@@ -144,6 +144,8 @@ public class FlightPage extends Basepage {
 	private WebElement PreffSpicejet;
 	@FindBy(xpath="//div[text()='Jet airways']")
 	private WebElement PreffJetAirways;
+	@FindBy(xpath="//div[text()='Air India Express']")
+	private WebElement PreffAirIndiaExpress;
 
 	// General input in case of Oneway input
 
@@ -241,6 +243,10 @@ public class FlightPage extends Basepage {
 		}
 		else if (airline.equalsIgnoreCase("jet airways")) {
 			PreffJetAirways.click();
+			
+		}
+		else if (airline.equalsIgnoreCase("Air India Express")) {
+			PreffAirIndiaExpress.click();
 			
 		}
 

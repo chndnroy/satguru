@@ -57,6 +57,7 @@ public class AirArabiaOnewayWithMealandBaggage extends Login{
 		System.out.println("Wallet payment is done");
 		ConfirmationPage cp = new ConfirmationPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 1);
+		cp.ConfirmBooking();
 
 	}
 }

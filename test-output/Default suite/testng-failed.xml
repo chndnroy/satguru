@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ScenarioBasedFlightScripts.FlyDubaiBook">
+      <class name="ScenarioBasedFlightScripts.AirIndiaExpressSSR">
         <methods>
           <include name="OnewayGDSConnectingFlight"/>
           <include name="mail"/>
           <include name="postCondition"/>
           <include name="preCondition"/>
         </methods>
-      </class> <!-- ScenarioBasedFlightScripts.FlyDubaiBook -->
+      </class> <!-- ScenarioBasedFlightScripts.AirIndiaExpressSSR -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
