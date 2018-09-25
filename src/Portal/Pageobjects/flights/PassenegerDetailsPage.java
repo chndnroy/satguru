@@ -1,25 +1,14 @@
 package Portal.Pageobjects.flights;
 
-import static org.testng.Assert.assertEquals;
-
-import java.util.List;
-
-import javax.xml.xpath.XPath;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 import Portal.generic.DropdownLib;
-import Portal.generic.ExcelUtils;
 import Portal.generic.WaitStatementLib;
 
 public class PassenegerDetailsPage {
@@ -180,71 +169,51 @@ public class PassenegerDetailsPage {
 	// }
 
 	public void SelectBaggageMealAdult1() throws InterruptedException {
-		try {sa.assertTrue(mealP1DrpDwn.isDisplayed(), "meal not aappearing");
 			mealP1DrpDwn.click();
 			DropdownLib.SelectByTextFromDropdown(driver, mealP1DrpDwn, 1);
-		} catch (Exception e) {
-			System.out.println("No meal is appearing");
-		}
+		
 
 		// WaitStatementLib.explicitWaitForClickable(driver, 2,
 		// selectBaggageP1True);
-		try {
 			selectBaggageP1True.isDisplayed();
 			selectBaggageP1True.click();
 			Thread.sleep(2000);
 			DropdownLib.SelectByTextFromDropdown(driver, Baggage1DrpDwn, 1);
-		} catch (Exception e) {
-			e.getMessage();
-			System.out.println("No baggage is appearing");
-		}
+		
 	}
 
 	public void SelectBaggageMealAdult2() throws InterruptedException {
-		try {
-			mealP2DrpDwn.isDisplayed();
 			mealP2DrpDwn.click();
 			DropdownLib.SelectByTextFromDropdown(driver, mealP2DrpDwn, 1);
-		} catch (Exception e) {
-			e.getMessage();
-			System.out.println("No meal is appearing");
 
-		}
-		try {
+		
 
 			selectBaggageP2True.click();
 			Thread.sleep(3000);
 			DropdownLib.SelectByTextFromDropdown(driver, Baggage2DrpDwn, 1);
-		} catch (Exception e1) {
-			e1.getMessage();
-			System.out.println("No baggage is appearing");
-		}
+		
+		
 	}
 
 	public void SelectBaggageMealchild1() throws InterruptedException {
-		try {
+		
 			mealP3DrpDwn.isDisplayed();
 			mealP3DrpDwn.click();
 			DropdownLib.SelectByTextFromDropdown(driver, mealP3DrpDwn, 1);
-		} catch (Exception e) {
-			e.getMessage();
-			System.out.println("No meal is appearing");
+		
 
-		}
-		try {
-
+		
+		
 			selectBaggageP3True.click();
 			Thread.sleep(3000);
 
 			DropdownLib.SelectByTextFromDropdown(driver, Baggage3DrpDwn, 1);
-		} catch (Exception e1) {
-			e1.getMessage();
-			System.out.println("No baggage is appeaaring");
-		}
+		
+		
 	}
 
 	public void SelectFlyDubaiBaggageAdult1() {
-		try {
+		
 			selectBaggageP1True.click();
 
 			try {
@@ -253,13 +222,10 @@ public class PassenegerDetailsPage {
 				e.printStackTrace();
 			}
 			DropdownLib.SelectByTextFromDropdown(driver, Baggage1DrpDwn, 1);
-		} catch (Exception e1) {
-			e1.getMessage();
-		}
+		
 	}
 
 	public void SelectFlyDubaiBaggageAdult2() {
-		try {
 
 			selectBaggageP2True.click();
 			try {
@@ -268,13 +234,10 @@ public class PassenegerDetailsPage {
 				e.printStackTrace();
 			}
 			DropdownLib.SelectByTextFromDropdown(driver, Baggage2DrpDwn, 1);
-		} catch (Exception e1) {
-			e1.getMessage();
-		}
+		
 	}
 
 	public void SelectFlyDubaiBaggagechild1() {
-		try {
 			selectBaggageP3True.click();
 			try {
 				Thread.sleep(3000);
@@ -282,9 +245,7 @@ public class PassenegerDetailsPage {
 				e.printStackTrace();
 			}
 			DropdownLib.SelectByTextFromDropdown(driver, Baggage3DrpDwn, 1);
-		} catch (Exception e1) {
-			e1.getMessage();
-		}
+		
 	}
 
 	public void ProceedFrBuk() {
@@ -324,4 +285,45 @@ public class PassenegerDetailsPage {
 		selectFirstpassenger.click();
 
 	}
+	
+	public void selectmeal()
+	{
+		try{
+			mealP1DrpDwn.click();
+			DropdownLib.SelectByTextFromDropdown(driver, mealP1DrpDwn, 1);
+			
+			mealP2DrpDwn.click();
+			DropdownLib.SelectByTextFromDropdown(driver, mealP2DrpDwn, 1);
+			
+			mealP3DrpDwn.click();
+			DropdownLib.SelectByTextFromDropdown(driver, mealP3DrpDwn, 1);
+		}
+		catch (Exception e) {
+			e.getMessage();
+			System.out.println("Meal is not appearing");
+		}
+		
+	}
+	public void selectBaggage() throws InterruptedException {
+		try {
+			
+		
+		selectBaggageP1True.click();
+		Thread.sleep(3000);
+		DropdownLib.SelectByTextFromDropdown(driver, Baggage1DrpDwn, 1);
+		selectBaggageP2True.click();
+		Thread.sleep(3000);
+		DropdownLib.SelectByTextFromDropdown(driver, Baggage2DrpDwn, 1);
+		selectBaggageP3True.click();
+		Thread.sleep(3000);
+		DropdownLib.SelectByTextFromDropdown(driver, Baggage3DrpDwn, 1);
+		} catch (Exception e) {
+			e.getMessage();
+			System.out.println("No Baggage is appearing");
+
+		}
+		
+		
+	}
 }
+
