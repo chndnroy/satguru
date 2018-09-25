@@ -14,12 +14,12 @@
       <![CDATA[Browser closed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="289927" started-at="2018-09-25T08:55:34Z" finished-at="2018-09-25T09:00:24Z">
+  <suite name="Suite" duration-ms="113583" started-at="2018-09-25T10:49:23Z" finished-at="2018-09-25T10:51:17Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="289927" started-at="2018-09-25T08:55:34Z" finished-at="2018-09-25T09:00:24Z">
-      <class name="ScenarioBasedFlightScripts.AirIndiaExpressSSR">
-        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:ScenarioBasedFlightScripts.AirIndiaExpressSSR@307f6b8c]" name="preCondition" is-config="true" duration-ms="3083" started-at="2018-09-25T08:55:34Z" finished-at="2018-09-25T08:55:37Z">
+    <test name="Test" duration-ms="113583" started-at="2018-09-25T10:49:23Z" finished-at="2018-09-25T10:51:17Z">
+      <class name="ScenarioBasedFlightScripts.AirIndiaExpress">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:ScenarioBasedFlightScripts.AirIndiaExpress@307f6b8c]" name="preCondition" is-config="true" duration-ms="2996" started-at="2018-09-25T10:49:23Z" finished-at="2018-09-25T10:49:26Z">
           <params>
             <param index="0">
               <value>
@@ -36,15 +36,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="OnewayGDSConnectingFlight()[pri:0, instance:ScenarioBasedFlightScripts.AirIndiaExpressSSR@307f6b8c]" name="OnewayGDSConnectingFlight" duration-ms="286826" started-at="2018-09-25T08:55:37Z" finished-at="2018-09-25T09:00:24Z">
+        <test-method status="PASS" signature="OnewayGDSConnectingFlight()[pri:0, instance:ScenarioBasedFlightScripts.AirIndiaExpress@307f6b8c]" name="OnewayGDSConnectingFlight" duration-ms="110571" started-at="2018-09-25T10:49:26Z" finished-at="2018-09-25T10:51:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnewayGDSConnectingFlight -->
-        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:ScenarioBasedFlightScripts.AirIndiaExpressSSR@307f6b8c]" name="postCondition" is-config="true" duration-ms="1" started-at="2018-09-25T09:00:24Z" finished-at="2018-09-25T09:00:24Z">
+        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:ScenarioBasedFlightScripts.AirIndiaExpress@307f6b8c]" name="postCondition" is-config="true" duration-ms="1" started-at="2018-09-25T10:51:17Z" finished-at="2018-09-25T10:51:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=OnewayGDSConnectingFlight status=SUCCESS method=AirIndiaExpressSSR.OnewayGDSConnectingFlight()[pri:0, instance:ScenarioBasedFlightScripts.AirIndiaExpressSSR@307f6b8c] output={null}]]]>
+                <![CDATA[[TestResult name=OnewayGDSConnectingFlight status=SUCCESS method=AirIndiaExpress.OnewayGDSConnectingFlight()[pri:0, instance:ScenarioBasedFlightScripts.AirIndiaExpress@307f6b8c] output={null}]]]>
               </value>
             </param>
           </params>
@@ -57,11 +57,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="mail()[pri:0, instance:ScenarioBasedFlightScripts.AirIndiaExpressSSR@307f6b8c]" name="mail" is-config="true" duration-ms="7" started-at="2018-09-25T09:00:24Z" finished-at="2018-09-25T09:00:24Z">
+        <test-method status="PASS" signature="mail()[pri:0, instance:ScenarioBasedFlightScripts.AirIndiaExpress@307f6b8c]" name="mail" is-config="true" duration-ms="4" started-at="2018-09-25T10:51:17Z" finished-at="2018-09-25T10:51:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mail -->
-      </class> <!-- ScenarioBasedFlightScripts.AirIndiaExpressSSR -->
+      </class> <!-- ScenarioBasedFlightScripts.AirIndiaExpress -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

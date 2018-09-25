@@ -85,6 +85,18 @@ public class PassenegerDetailsPage {
 	private WebElement seatMappopup;
 	@FindBy(xpath = "//input[@id='change_0_0']")
 	private WebElement selectFirstpassenger;
+	@FindBy(xpath="//a[text()='Select Seat']")
+	private WebElement Seat;
+	@FindBy(id="change_0_0")
+	private WebElement Pas1seat;
+	@FindBy(id="change_0_1")
+	private WebElement Pas2seat;
+	@FindBy(id="change_0_2")
+	private WebElement Pas3seat;
+	@FindBy(xpath="//li[@class='available']")
+	private WebElement Availableseat;
+	@FindBy(xpath="//a[contains(text(),'CONFIRM & CONTINUE')]")
+	private WebElement confirmSeat;
 
 	public PassenegerDetailsPage(WebDriver driver) {
 		this.driver = driver;
@@ -324,6 +336,20 @@ public class PassenegerDetailsPage {
 		}
 		
 		
+	}public void selectSeat() {
+		Seat.click();
+		WaitStatementLib.explicitWaitForClickable(driver, 1, Pas1seat);
+		Pas1seat.click();
+		Availableseat.click();
+		
+		Pas2seat.click();
+		Availableseat.click();
+		
+		Pas3seat.click();
+		Availableseat.click();
+		confirmSeat.click();
+		System.out.println("Seat selected successfully");
 	}
+	
 }
 

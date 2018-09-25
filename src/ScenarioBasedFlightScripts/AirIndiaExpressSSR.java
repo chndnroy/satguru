@@ -49,9 +49,10 @@ public class AirIndiaExpressSSR extends Login{
 		Thread.sleep(5000);
 		pdp.selectmeal();
 		pdp.selectBaggage();
+		pdp.selectSeat();
 //		pdp.SelectBaggageMealAdult1();
 //		pdp.SelectBaggageMealchild1();
-		
+
 		pdp.ProceedFrBuk();
 		PaymentPage pp = new PaymentPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);

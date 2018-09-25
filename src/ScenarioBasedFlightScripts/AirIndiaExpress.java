@@ -47,7 +47,8 @@ public class AirIndiaExpress extends Login {
 		Thread.sleep(5000);
 		pdp.selectChildPassenger1(driver);
 		Thread.sleep(5000);
-		
+		Thread.sleep(5000);
+
 		pdp.ProceedFrBuk();
 		PaymentPage pp = new PaymentPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
