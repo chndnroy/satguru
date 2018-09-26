@@ -1,4 +1,4 @@
-package ScenarioBasedFlightScripts;
+package ScenarioBasedRoundTrip;
 
 import org.testng.annotations.Test;
 
@@ -14,10 +14,9 @@ import Portal.generic.ExcelUtils;
 import Portal.generic.WaitStatementLib;
 import Portal.scripts.Login;
 
-public class IndigoSpecialfareBook extends Login {
-
+public class AirIndiaExpRoundtrip extends Login {
 	@Test
-	public void OnewayGDSConnectingFlight() throws InterruptedException {
+	public void RoundConnectingFlight() throws InterruptedException {
 		PortalLogin pl = new PortalLogin(driver);
 		pl.sendLogin(ExcelUtils.readData("Sheet1", 0, 1), ExcelUtils.readData("Sheet1", 1, 1),
 				ExcelUtils.readData("Sheet1", 2, 1));
@@ -25,12 +24,16 @@ public class IndigoSpecialfareBook extends Login {
 		System.out.println("Portal login is successful");
 		FlightPage fp = new FlightPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
-
-		fp.Scenario1Oneway(ExcelUtils.readData("Sheet3", 0, 2), ExcelUtils.readData("Sheet3", 1, 2));
-		fp.preferredAirlineselect(ExcelUtils.readData("sheet3", 2, 2));
-		fp.PassengerCombination1(driver);
-		System.out.println("Oneway input is successful");
-		Flightresult fr = new Flightresult(driver);
+		System.out.println("Flight page is open");
+		WaitStatementLib.implicitWaitforMinutes(driver, 2);
+		fp.RoundtripPage();
+		System.out.println("Roundtrip Page is open");
+		fp.RoundTripLCCInput(ExcelUtils.readData("Sheet3", 0, 7), ExcelUtils.readData("Sheet3", 1, 7));
+		fp.preferredAirlineRoundtripselect("Air India Express");
+		fp.PassengerRoundCombination1(driver);
+		
+		System.out.println("ROundtrip input is successful");
+		Flightresult fr=new Flightresult(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 4);
 		fr.BookLCCSpecial(driver);
 		System.out.println("Book button clicked on Search result page");
@@ -39,7 +42,7 @@ public class IndigoSpecialfareBook extends Login {
 		csp.noThanks();
 		FlightDetailsPage fdp = new FlightDetailsPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
-		fdp.OnewaydetailPage();
+		fdp.clickContinue(driver);
 		PassenegerDetailsPage pdp = new PassenegerDetailsPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
 		pdp.selectPassenger(driver);
@@ -48,9 +51,9 @@ public class IndigoSpecialfareBook extends Login {
 		Thread.sleep(5000);
 		pdp.selectChildPassenger1(driver);
 		Thread.sleep(5000);
-		pdp.selectmeal();
-		pdp.selectBaggage();
-		pdp.selectSeat();
+//		pdp.SelectBaggageMealAdult1();
+//		pdp.SelectBaggageMealAdult2();
+//		pdp.SelectBaggageMealchild1();
 		pdp.ProceedFrBuk();
 		PaymentPage pp = new PaymentPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
@@ -60,5 +63,5 @@ public class IndigoSpecialfareBook extends Login {
 		WaitStatementLib.implicitWaitforMinutes(driver, 1);
 		cp.ConfirmBooking();
 
-	}
+}
 }

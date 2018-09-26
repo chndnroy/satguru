@@ -4,14 +4,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="ScenarioBasedFlightScripts.AirIndiaExpress">
+      <class name="ScenarioBasedRoundTrip.AirArabiaROundMealNBaggage">
         <methods>
           <include name="mail"/>
-          <include name="OnewayGDSConnectingFlight"/>
           <include name="postCondition"/>
+          <include name="RoundConnectingFlight"/>
           <include name="preCondition"/>
         </methods>
-      </class> <!-- ScenarioBasedFlightScripts.AirIndiaExpress -->
+      </class> <!-- ScenarioBasedRoundTrip.AirArabiaROundMealNBaggage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

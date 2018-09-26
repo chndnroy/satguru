@@ -49,9 +49,11 @@ public class AirArabiaROundMealNBaggage extends Login {
 		Thread.sleep(5000);
 		pdp.selectChildPassenger1(driver);
 		Thread.sleep(5000);
-		pdp.SelectBaggageMealAdult1();
-		pdp.SelectBaggageMealAdult2();
-		pdp.SelectBaggageMealchild1();
+		pdp.selectmeal();
+		pdp.ReturnMeal();
+		pdp.selectBaggage();
+		pdp.ReturnBaggage();
+		
 		
 		pdp.ProceedFrBuk();
 		PaymentPage pp = new PaymentPage(driver);
