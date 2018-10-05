@@ -4,14 +4,30 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="ScenarioBasedRoundTrip.AirArabiaROundMealNBaggage">
+      <class name="Portal.scripts.MulticityTripTest">
         <methods>
           <include name="mail"/>
           <include name="postCondition"/>
-          <include name="RoundConnectingFlight"/>
+          <include name="MulticityTckt"/>
           <include name="preCondition"/>
         </methods>
-      </class> <!-- ScenarioBasedRoundTrip.AirArabiaROundMealNBaggage -->
+      </class> <!-- Portal.scripts.MulticityTripTest -->
+      <class name="Portal.scripts.HotelTest">
+        <methods>
+          <include name="mail"/>
+          <include name="postCondition"/>
+          <include name="HotelBook"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- Portal.scripts.HotelTest -->
+      <class name="Portal.scripts.RoundTripTest">
+        <methods>
+          <include name="mail"/>
+          <include name="postCondition"/>
+          <include name="RoundtripTckt"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- Portal.scripts.RoundTripTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
