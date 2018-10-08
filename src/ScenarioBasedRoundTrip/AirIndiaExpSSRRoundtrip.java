@@ -52,19 +52,19 @@ public class AirIndiaExpSSRRoundtrip extends Login {
 		Thread.sleep(5000);
 		pdp.selectChildPassenger1(driver);
 		Thread.sleep(5000);
-		// pdp.selectmeal();
-		// pdp.ReturnMeal();
+		 pdp.selectmeal();
+		 pdp.ReturnMeal();
 		pdp.selectBaggage();
 		pdp.ReturnBaggage();
-		// pdp.selectSeat();
+		 pdp.selectSeat();
 
 		pdp.ProceedFrBuk();
 		PaymentPage pp = new PaymentPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
-		// System.out.println("Wallet payment is done");
-		// ConfirmationPage cp = new ConfirmationPage(driver);
-		// WaitStatementLib.implicitWaitforMinutes(driver, 1);
-		// cp.ConfirmBooking();
+		 System.out.println("Wallet payment is done");
+		 ConfirmationPage cp = new ConfirmationPage(driver);
+		 WaitStatementLib.implicitWaitforMinutes(driver, 1);
+		 cp.ConfirmBooking();
 
 	}
 }

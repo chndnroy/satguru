@@ -44,7 +44,7 @@ public class BaseLib {
 		}
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.get(GetPropertyValue.getPropertyValue("Blr"));
+		driver.get(GetPropertyValue.getPropertyValue("Test"));
 		Reporter.log("Navigating to the test URL");
 
 	}
@@ -76,15 +76,15 @@ public class BaseLib {
 	}
 	
 	
-	@AfterSuite
-	public void mail() throws InterruptedException, IOException
-	{
-		
-		Sendattachmentmail sam=new Sendattachmentmail();
-//		sam.sendmail();
-//		Thread.sleep(10000);
+//	@AfterSuite
+//	public void mail() throws InterruptedException, IOException
+//	{
 //		
-	}
+//		Sendattachmentmail sam=new Sendattachmentmail();
+////		sam.sendmail();
+////		Thread.sleep(10000);
+////		
+//	}
 }
 
 
