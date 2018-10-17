@@ -13,12 +13,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.awt.Robot;
 import java.util.List;
+import java.util.Set;
 
 import Portal.generic.ElementCheck;
 import Portal.generic.ExcelUtils;
+import Portal.generic.FareChange;
 import Portal.generic.WaitStatementLib;
 
 public class Flightresult {
+
 	public Flightresult(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -44,7 +47,7 @@ public class Flightresult {
 	private WebElement OntheFlyMarkupBtn;
 	@FindBy(xpath = "//div[@id='up']//div[@class='modal-body")
 	private static WebElement FareUp;
-	@FindBy(xpath = "//div[@id='down']//div[@class='modal-body")
+	@FindBy(xpath = "//div[@id='down']")
 	private static WebElement Faredown;
 	@FindBy(xpath = "//div[@class='flight-details']//input")
 	private WebElement SelectFlight;
@@ -74,18 +77,43 @@ public class Flightresult {
 	@FindBy(xpath="//div[@data-name='OFFER']//p[contains(text(),'Pay To Change')]")
 	private WebElement FLydubaiBukbtn;
 	WebDriver driver;
+	@FindBy(xpath = "//div[@id='down']//p[@class='modal-title']")
+	private WebElement FaredownPopup;
+
+	@FindBy(xpath = "//div[@id='down']//a[text()='Continue']")
+	private WebElement continueDown;
+
+	@FindBy(xpath = "//div[@id='up']")
+	private WebElement FareupPopup;
+
+	@FindBy(xpath = "//div[@id='up']//a[text()='Continue']")
+	private WebElement continueUp;
 
 	public void book(WebDriver driver) {
 		WaitStatementLib.explicitWaitForClickable(driver, 2, Bookbtn);
 		Bookbtn.click();
-
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	
+		FareChange.HandleFarechange(driver);
 		System.out.println("Book Button clicked");
 
 	}
+	
 
 	public void BasicBook(WebDriver driver) {
 		WaitStatementLib.explicitWaitForClickable(driver, 2, BasicBook);
 		BasicBook.click();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		FareChange.HandleFarechange(driver);
+
 
 	}
 
@@ -94,29 +122,28 @@ public class Flightresult {
 	public void BookLCCSpecial(WebDriver driver) {
 		LccSpecialBookBtn.click();
 
-	}
-
-	public static boolean farechange(WebDriver driver) {
 		try {
-			if (ContinueBtn.isDisplayed()) {
-				System.out.println("fare has been changed");
-				System.out.println("continue button clicked");
-				ContinueBtn.click();
-				return true;
-			} else {
-				return false;
-			}
-
-		} catch (Exception e) {
-			e.getMessage();
-			return false;
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
+		FareChange.HandleFarechange(driver);
+
+		
 
 	}
+
+	
 
 	public void BookFlydubaiBtn(WebDriver driver) {
 		WaitStatementLib.implicitWaitforSeconds(driver, 10);
 		FLydubaiBukbtn.click();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		FareChange.HandleFarechange(driver);
 
 	}
 

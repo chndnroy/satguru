@@ -1,33 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <parameter name="browser" value="chrome"/>
+  <test name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Portal.scripts.MulticityTripTest">
+      <class name="Portal.scripts.creditcard.HotelCreditCard">
         <methods>
-          <include name="mail"/>
-          <include name="postCondition"/>
-          <include name="MulticityTckt"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- Portal.scripts.MulticityTripTest -->
-      <class name="Portal.scripts.HotelTest">
-        <methods>
-          <include name="mail"/>
-          <include name="postCondition"/>
           <include name="HotelBook"/>
+          <include name="postCondition"/>
           <include name="preCondition"/>
         </methods>
-      </class> <!-- Portal.scripts.HotelTest -->
-      <class name="Portal.scripts.RoundTripTest">
+      </class> <!-- Portal.scripts.creditcard.HotelCreditCard -->
+      <class name="Portal.scripts.creditcard.InsuranceCreditCard">
         <methods>
-          <include name="mail"/>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- Portal.scripts.creditcard.InsuranceCreditCard -->
+      <class name="Portal.scripts.creditcard.MulticityCreditCard">
+        <methods>
+          <include name="MulticityTckt"/>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- Portal.scripts.creditcard.MulticityCreditCard -->
+      <class name="Portal.scripts.creditcard.RoundtripCreditCard">
+        <methods>
           <include name="postCondition"/>
           <include name="RoundtripTckt"/>
           <include name="preCondition"/>
         </methods>
-      </class> <!-- Portal.scripts.RoundTripTest -->
+      </class> <!-- Portal.scripts.creditcard.RoundtripCreditCard -->
+      <class name="Portal.scripts.creditcard.OnewayCreditCard">
+        <methods>
+          <include name="postCondition"/>
+          <include name="OnewayTckt"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- Portal.scripts.creditcard.OnewayCreditCard -->
+      <class name="Portal.scripts.creditcard.FlightNInsuranceCreditCard">
+        <methods>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+          <include name="RoundtripTckt"/>
+        </methods>
+      </class> <!-- Portal.scripts.creditcard.FlightNInsuranceCreditCard -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

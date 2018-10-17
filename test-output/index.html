@@ -2,10 +2,9 @@
 
 <html>
   <head>
-  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -24,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>Regression.xml</span>
+                    <span>creditcard.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 3 failed,   3 passed</span>
+                    <span class="method-stats">6 methods, 5 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,17 +101,27 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.HotelTest" hash-for-method="HotelBook">HotelBook</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.creditcard.HotelCreditCard" hash-for-method="HotelBook">HotelBook</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.MulticityTripTest" hash-for-method="MulticityTckt">MulticityTckt</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.creditcard.MulticityCreditCard" hash-for-method="MulticityTckt">MulticityTckt</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.RoundTripTest" hash-for-method="RoundtripTckt">RoundtripTckt</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.creditcard.OnewayCreditCard" hash-for-method="OnewayTckt">OnewayTckt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.creditcard.RoundtripCreditCard" hash-for-method="RoundtripTckt">RoundtripTckt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.creditcard.FlightNInsuranceCreditCard" hash-for-method="RoundtripTckt">RoundtripTckt</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -126,17 +135,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.OnewayFlightTest" hash-for-method="OnewatTckt">OnewatTckt</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.FlightPlusInsuranceTest" hash-for-method="RoundtripTckt">RoundtripTckt</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.InsuranceTest" hash-for-method="bookInsurance">bookInsurance</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Portal.scripts.creditcard.InsuranceCreditCard" hash-for-method="bookInsurance">bookInsurance</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -154,109 +153,7 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Portal.scripts.MulticityTripTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="MulticityTckt">
-                  </a> <!-- MulticityTckt -->
-                  <span class="method-name">MulticityTckt</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: (//a[contains(text(),&apos;Book Now&apos;)])[1]&apos; (tried for 2 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at Portal.generic.WaitStatementLib.explicitWaitForClickable(WaitStatementLib.java:24)
-	at Portal.Pageobjects.flights.Flightresult.book(Flightresult.java:79)
-	at Portal.scripts.MulticityTripTest.MulticityTckt(MulticityTripTest.java:35)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//a[contains(text(),&apos;Book Now&apos;)])[1]&quot;}
-  (Session info: chrome=67.0.3396.99)
-  (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
-System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
-Session ID: ec43fc2e1d982d06ad2a13cdc4ceb8bd
-*** Element info: {Using=xpath, value=(//a[contains(text(),&apos;Book Now&apos;)])[1]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	... 28 more
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Portal.scripts.RoundTripTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="RoundtripTckt">
-                  </a> <!-- RoundtripTckt -->
-                  <span class="method-name">RoundtripTckt</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[contains(text(),&apos;Order Details&apos;)]&quot;}
-  (Session info: chrome=67.0.3396.99)
-  (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
-System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
-Session ID: 9a4c341e757644100d50da829eaf8431
-*** Element info: {Using=xpath, value=//td[contains(text(),&apos;Order Details&apos;)]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
-	at Portal.Pageobjects.flights.ConfirmationPage.ConfirmBooking(ConfirmationPage.java:38)
-	at Portal.scripts.RoundTripTest.RoundtripTckt(RoundTripTest.java:63)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Portal.scripts.HotelTest</span>
+              <span class="class-name">Portal.scripts.creditcard.HotelCreditCard</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -264,16 +161,15 @@ Session ID: 9a4c341e757644100d50da829eaf8431
                   <a name="HotelBook">
                   </a> <!-- HotelBook -->
                   <span class="method-name">HotelBook</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;a href=&quot;javascript:void(0);&quot; data-ng-click=&quot;hotelReview(hotelInfomation);&quot; class=&quot;btn orange-btn&quot;&gt;...&lt;/a&gt; is not clickable at point (1159, 402). Other element would receive the click: &lt;div class=&quot;modal fade in&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; id=&quot;bookingLoader&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=67.0.3396.99)
   (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
-Session ID: e77defd6dcf54c4be7a8337102f87063
+Session ID: 0596ceeae88eae9d2f40f61239938972
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -281,14 +177,193 @@ Session ID: e77defd6dcf54c4be7a8337102f87063
 	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:150)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
-	at Portal.Pageobjects.flights.PaymentPage.walletPay(PaymentPage.java:64)
-	at Portal.scripts.HotelTest.HotelBook(HotelTest.java:65)
-... Removed 33 stack frames
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at Portal.Pageobjects.hotels.HotelInfoPage.ClikOnBukBtn(HotelInfoPage.java:44)
+	at Portal.scripts.creditcard.HotelCreditCard.HotelBook(HotelCreditCard.java:47)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Portal.scripts.creditcard.MulticityCreditCard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MulticityTckt">
+                  </a> <!-- MulticityTckt -->
+                  <span class="method-name">MulticityTckt</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;country&apos;]&quot;}
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 85412d6ffec99b577f7a697b76fe4869
+*** Element info: {Using=xpath, value=//input[@name=&apos;country&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
+	at Portal.Pageobjects.flights.PaymentPage.CreditCardPay(PaymentPage.java:89)
+	at Portal.scripts.creditcard.MulticityCreditCard.MulticityTckt(MulticityCreditCard.java:54)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Portal.scripts.creditcard.RoundtripCreditCard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RoundtripTckt">
+                  </a> <!-- RoundtripTckt -->
+                  <span class="method-name">RoundtripTckt</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;country&apos;]&quot;}
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: bf607bffe32b57a299d90031deb77979
+*** Element info: {Using=xpath, value=//input[@name=&apos;country&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
+	at Portal.Pageobjects.flights.PaymentPage.CreditCardPay(PaymentPage.java:89)
+	at Portal.scripts.creditcard.RoundtripCreditCard.RoundtripTckt(RoundtripCreditCard.java:51)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Portal.scripts.creditcard.OnewayCreditCard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OnewayTckt">
+                  </a> <!-- OnewayTckt -->
+                  <span class="method-name">OnewayTckt</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 74e94a5df89c2f7b91de4797068754eb
+*** Element info: {Using=xpath, value=//a[text()=&apos;Continue&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.isEnabled(Unknown Source)
+	at Portal.Pageobjects.flights.FlightDetailsPage.OnewaydetailPage(FlightDetailsPage.java:95)
+	at Portal.scripts.creditcard.OnewayCreditCard.OnewayTckt(OnewayCreditCard.java:43)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Portal.scripts.creditcard.FlightNInsuranceCreditCard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RoundtripTckt">
+                  </a> <!-- RoundtripTckt -->
+                  <span class="method-name">RoundtripTckt</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;country&apos;]&quot;}
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: cd85928d4ed9b4dd1ddb61a32c7acb8b
+*** Element info: {Using=xpath, value=//input[@name=&apos;country&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
+	at Portal.Pageobjects.flights.PaymentPage.CreditCardPay(PaymentPage.java:89)
+	at Portal.scripts.creditcard.FlightNInsuranceCreditCard.RoundtripTckt(FlightNInsuranceCreditCard.java:53)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -297,7 +372,7 @@ Session ID: e77defd6dcf54c4be7a8337102f87063
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Portal.scripts.InsuranceTest</span>
+              <span class="class-name">Portal.scripts.creditcard.InsuranceCreditCard</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -309,40 +384,10 @@ Session ID: e77defd6dcf54c4be7a8337102f87063
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Portal.scripts.FlightPlusInsuranceTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="RoundtripTckt">
-                  </a> <!-- RoundtripTckt -->
-                  <span class="method-name">RoundtripTckt</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Portal.scripts.OnewayFlightTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="OnewatTckt">
-                  </a> <!-- OnewatTckt -->
-                  <span class="method-name">OnewatTckt</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/ttuser10/workspace/Portal_1/Regression.xml</span>
+            <span class="header-content">/home/ttuser10/workspace/Portal_1/creditcard.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -352,12 +397,12 @@ Session ID: e77defd6dcf54c4be7a8337102f87063
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Portal.scripts.RoundTripTest&quot;/&gt;
-      &lt;class name=&quot;Portal.scripts.InsuranceTest&quot;/&gt;
-      &lt;class name=&quot;Portal.scripts.HotelTest&quot;/&gt;
-      &lt;class name=&quot;Portal.scripts.OnewayFlightTest&quot;/&gt;
-      &lt;class name=&quot;Portal.scripts.MulticityTripTest&quot;/&gt;
-      &lt;class name=&quot;Portal.scripts.FlightPlusInsuranceTest&quot;/&gt;
+      &lt;class name=&quot;Portal.scripts.creditcard.FlightNInsuranceCreditCard&quot;/&gt;
+      &lt;class name=&quot;Portal.scripts.creditcard.MulticityCreditCard&quot;/&gt;
+      &lt;class name=&quot;Portal.scripts.creditcard.HotelCreditCard&quot;/&gt;
+      &lt;class name=&quot;Portal.scripts.creditcard.RoundtripCreditCard&quot;/&gt;
+      &lt;class name=&quot;Portal.scripts.creditcard.InsuranceCreditCard&quot;/&gt;
+      &lt;class name=&quot;Portal.scripts.creditcard.OnewayCreditCard&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -399,34 +444,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'MulticityTckt')
-data.setCell(0, 2, 'Portal.scripts.MulticityTripTest')
-data.setCell(0, 3, 511813);
+data.setCell(0, 1, 'HotelBook')
+data.setCell(0, 2, 'Portal.scripts.creditcard.HotelCreditCard')
+data.setCell(0, 3, 128543);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'RoundtripTckt')
-data.setCell(1, 2, 'Portal.scripts.RoundTripTest')
-data.setCell(1, 3, 120372);
+data.setCell(1, 2, 'Portal.scripts.creditcard.FlightNInsuranceCreditCard')
+data.setCell(1, 3, 118862);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'RoundtripTckt')
-data.setCell(2, 2, 'Portal.scripts.FlightPlusInsuranceTest')
-data.setCell(2, 3, 106158);
+data.setCell(2, 1, 'MulticityTckt')
+data.setCell(2, 2, 'Portal.scripts.creditcard.MulticityCreditCard')
+data.setCell(2, 3, 95313);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'OnewatTckt')
-data.setCell(3, 2, 'Portal.scripts.OnewayFlightTest')
-data.setCell(3, 3, 101612);
+data.setCell(3, 1, 'RoundtripTckt')
+data.setCell(3, 2, 'Portal.scripts.creditcard.RoundtripCreditCard')
+data.setCell(3, 3, 73680);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'HotelBook')
-data.setCell(4, 2, 'Portal.scripts.HotelTest')
-data.setCell(4, 3, 80684);
+data.setCell(4, 1, 'OnewayTckt')
+data.setCell(4, 2, 'Portal.scripts.creditcard.OnewayCreditCard')
+data.setCell(4, 3, 52768);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'bookInsurance')
-data.setCell(5, 2, 'Portal.scripts.InsuranceTest')
-data.setCell(5, 3, 67062);
+data.setCell(5, 2, 'Portal.scripts.creditcard.InsuranceCreditCard')
+data.setCell(5, 3, 44412);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 minutes</span>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -441,44 +486,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Portal.scripts.InsuranceTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">mail</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Portal.scripts.MulticityTripTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">mail</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Portal.scripts.FlightPlusInsuranceTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">mail</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Portal.scripts.OnewayFlightTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">mail</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Portal.scripts.HotelTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">mail</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -487,7 +497,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Portal.scripts.RoundTripTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Portal.scripts.creditcard.FlightNInsuranceCreditCard</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">preCondition(chrome)</span>
                 <span class="method-start">0 ms</span>
@@ -496,98 +506,97 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">RoundtripTckt</span>
-                <span class="method-start">4233 ms</span>
+                <span class="method-start">11246 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=RoundtripTckt status=FAILURE method=RoundTripTest.RoundtripTckt()[pri:0, instance:P...)</span>
-                <span class="method-start">124609 ms</span>
+                <span class="method-name">postCondition([TestResult name=RoundtripTckt status=FAILURE method=FlightNInsuranceCreditCard.RoundtripTckt()[pri:...)</span>
+                <span class="method-start">130128 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Portal.scripts.InsuranceTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Portal.scripts.creditcard.MulticityCreditCard</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">preCondition(chrome)</span>
-                <span class="method-start">124793 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">bookInsurance</span>
-                <span class="method-start">127255 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=bookInsurance status=SUCCESS method=InsuranceTest.bookInsurance()[pri:0, instance:P...)</span>
-                <span class="method-start">194319 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Portal.scripts.HotelTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">preCondition(chrome)</span>
-                <span class="method-start">194320 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">HotelBook</span>
-                <span class="method-start">197133 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=HotelBook status=FAILURE method=HotelTest.HotelBook()[pri:0, instance:Portal.script...)</span>
-                <span class="method-start">277818 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Portal.scripts.OnewayFlightTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">preCondition(chrome)</span>
-                <span class="method-start">277977 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">OnewatTckt</span>
-                <span class="method-start">281629 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=OnewatTckt status=SUCCESS method=OnewayFlightTest.OnewatTckt()[pri:0, instance:Port...)</span>
-                <span class="method-start">383242 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Portal.scripts.MulticityTripTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">preCondition(chrome)</span>
-                <span class="method-start">383242 ms</span>
+                <span class="method-start">130344 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">MulticityTckt</span>
-                <span class="method-start">385970 ms</span>
+                <span class="method-start">135494 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=MulticityTckt status=FAILURE method=MulticityTripTest.MulticityTckt()[pri:0, instan...)</span>
-                <span class="method-start">897787 ms</span>
+                <span class="method-name">postCondition([TestResult name=MulticityTckt status=FAILURE method=MulticityCreditCard.MulticityTckt()[pri:0, inst...)</span>
+                <span class="method-start">230810 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Portal.scripts.FlightPlusInsuranceTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Portal.scripts.creditcard.HotelCreditCard</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">preCondition(chrome)</span>
-                <span class="method-start">897928 ms</span>
+                <span class="method-start">230972 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">RoundtripTckt</span>
-                <span class="method-start">900463 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">HotelBook</span>
+                <span class="method-start">234423 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=RoundtripTckt status=SUCCESS method=FlightPlusInsuranceTest.RoundtripTckt()[pri:0, ...)</span>
-                <span class="method-start">1006623 ms</span>
+                <span class="method-name">postCondition([TestResult name=HotelBook status=FAILURE method=HotelCreditCard.HotelBook()[pri:0, instance:Portal....)</span>
+                <span class="method-start">362967 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Portal.scripts.RoundTripTest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite after">
-                <span class="method-name">mail</span>
-                <span class="method-start">1006644 ms</span>
-              </div> <!-- configuration-suite after -->
+              <div class="chronological-class-name">Portal.scripts.creditcard.RoundtripCreditCard</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(chrome)</span>
+                <span class="method-start">363341 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RoundtripTckt</span>
+                <span class="method-start">365207 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=RoundtripTckt status=FAILURE method=RoundtripCreditCard.RoundtripTckt()[pri:0, inst...)</span>
+                <span class="method-start">438891 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Portal.scripts.creditcard.InsuranceCreditCard</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(chrome)</span>
+                <span class="method-start">439048 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">bookInsurance</span>
+                <span class="method-start">445386 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=bookInsurance status=SUCCESS method=InsuranceCreditCard.bookInsurance()[pri:0, inst...)</span>
+                <span class="method-start">489805 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Portal.scripts.creditcard.OnewayCreditCard</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(chrome)</span>
+                <span class="method-start">489806 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">OnewayTckt</span>
+                <span class="method-start">511525 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postCondition([TestResult name=OnewayTckt status=FAILURE method=OnewayCreditCard.OnewayTckt()[pri:0, instance:Port...)</span>
+                <span class="method-start">564297 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

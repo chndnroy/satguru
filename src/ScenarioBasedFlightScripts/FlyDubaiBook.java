@@ -43,10 +43,11 @@ public class FlyDubaiBook extends Login {
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
 		pdp.selectPassenger(driver);
 		Thread.sleep(5000);
-		pdp.selectAdultPassenger2(driver);
-		Thread.sleep(5000);
-		pdp.selectChildPassenger1(driver);
-		Thread.sleep(5000);
+//		pdp.selectAdultPassenger2(driver);
+//		Thread.sleep(5000);
+//		pdp.selectChildPassenger1(driver);
+//		Thread.sleep(5000);
+		pdp.selectmeal();
 		
 		pdp.ProceedFrBuk();
 		PaymentPage pp = new PaymentPage(driver);

@@ -16,7 +16,6 @@ import Portal.Pageobjects.flights.PassenegerDetailsPage;
 import Portal.Pageobjects.flights.PaymentPage;
 import Portal.generic.ExcelUtils;
 import Portal.generic.FullpageScreenshot;
-import Portal.generic.HandleFarePopup;
 import Portal.generic.WaitStatementLib;
 
 public class OnewayFlightTest extends Login {

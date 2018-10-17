@@ -13,7 +13,6 @@ import Portal.Pageobjects.flights.PaymentPage;
 import Portal.generic.ElementCheck;
 import Portal.generic.ExcelUtils;
 import Portal.generic.FullpageScreenshot;
-import Portal.generic.HandleFarePopup;
 import Portal.generic.WaitStatementLib;
 
 public class RoundTripTest extends Login {

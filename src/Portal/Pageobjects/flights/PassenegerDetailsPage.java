@@ -318,7 +318,9 @@ public class PassenegerDetailsPage {
 	
 	public void selectmeal()
 	{
-		try{
+		if (mealP1DrpDwn!=null) {
+			
+		
 			mealP1DrpDwn.click();
 			DropdownLib.SelectByTextFromDropdown(driver, mealP1DrpDwn, 1);
 			
@@ -328,8 +330,7 @@ public class PassenegerDetailsPage {
 			mealP3DrpDwn.click();
 			DropdownLib.SelectByTextFromDropdown(driver, mealP3DrpDwn, 1);
 		}
-		catch (Exception e) {
-			e.getMessage();
+		else  {
 			System.out.println("Meal is not appearing");
 		}
 		
