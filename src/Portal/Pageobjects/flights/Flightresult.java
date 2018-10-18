@@ -92,13 +92,13 @@ public class Flightresult {
 	public void book(WebDriver driver) {
 		WaitStatementLib.explicitWaitForClickable(driver, 2, Bookbtn);
 		Bookbtn.click();
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	
-		FareChange.HandleFarechange(driver);
+//		try {
+//			Thread.sleep(5000);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
+//	
+//		FareChange.HandleFarechange(driver);
 		System.out.println("Book Button clicked");
 
 	}
@@ -107,12 +107,12 @@ public class Flightresult {
 	public void BasicBook(WebDriver driver) {
 		WaitStatementLib.explicitWaitForClickable(driver, 2, BasicBook);
 		BasicBook.click();
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		FareChange.HandleFarechange(driver);
+//		try {
+//			Thread.sleep(5000);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
+//		FareChange.HandleFarechange(driver);
 
 
 	}
@@ -122,12 +122,12 @@ public class Flightresult {
 	public void BookLCCSpecial(WebDriver driver) {
 		LccSpecialBookBtn.click();
 
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		FareChange.HandleFarechange(driver);
+//		try {
+//			Thread.sleep(5000);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
+//		FareChange.HandleFarechange(driver);
 
 		
 
@@ -138,12 +138,12 @@ public class Flightresult {
 	public void BookFlydubaiBtn(WebDriver driver) {
 		WaitStatementLib.implicitWaitforSeconds(driver, 10);
 		FLydubaiBukbtn.click();
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		FareChange.HandleFarechange(driver);
+//		try {
+//			Thread.sleep(5000);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
+//		FareChange.HandleFarechange(driver);
 
 	}
 

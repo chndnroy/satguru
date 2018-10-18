@@ -20,7 +20,7 @@
         <version>2.22.0</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>flydubai.xml</suiteXmlFile>
+            <suiteXmlFile>Regression.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>

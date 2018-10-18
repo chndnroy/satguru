@@ -44,7 +44,7 @@ public class BaseLib {
 		}
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.get(GetPropertyValue.getPropertyValue("Blr"));
+		driver.get(GetPropertyValue.getPropertyValue("UAT"));
 		Reporter.log("Navigating to the test URL");
 
 	}
