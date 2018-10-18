@@ -12,12 +12,12 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtils {
-	static final String filepath = "/home/ttuser10/Desktop/test data.xlsx";
+	static final String filepath = "/home/ttuser10/workspace/Portal_1/test data.xlsx";
 
 	public static String readData(String sheetname, int rowNum, int cellNum) {
 		String data = "";
 		try {
-			XSSFWorkbook h = new XSSFWorkbook("/home/ttuser10/Desktop/test data.xlsx");
+			XSSFWorkbook h = new XSSFWorkbook(filepath);
 			XSSFSheet sheet = h.getSheet(sheetname);
 			data = sheet.getRow(rowNum).getCell(cellNum).getStringCellValue();
 

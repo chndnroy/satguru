@@ -44,7 +44,7 @@ public class BaseLib {
 		}
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.get(GetPropertyValue.getPropertyValue("UAT"));
+		driver.get(GetPropertyValue.getPropertyValue("Blr"));
 		Reporter.log("Navigating to the test URL");
 
 	}
@@ -63,7 +63,7 @@ public class BaseLib {
 			slib.getScreenshot(driver, fileName);
 			Reporter.log("screenshot has been taken",true);
 		}
-		//driver.close();
+		driver.close();
 		Reporter.log("Browser closed",true);
 		System.out.println("==========================");
 		System.out.println(" ");
