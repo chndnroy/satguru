@@ -56,8 +56,8 @@ public class HotelTest extends Login {
 		HotelPassengerDetailsPage hpdp = new HotelPassengerDetailsPage(driver);
 		hpdp.searchAdultPass("9");
 		Thread.sleep(5000);
-		hpdp.searchChild1Passenger("7");
-		Thread.sleep(3000);
+//		hpdp.searchChild1Passenger("7");
+//		Thread.sleep(3000);
 		hpdp.clickBookBtn();
 		PaymentPage pp = new PaymentPage(driver);
 		System.out.println("Payment page is open");

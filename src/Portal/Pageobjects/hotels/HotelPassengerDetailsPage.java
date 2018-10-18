@@ -62,15 +62,15 @@ public class HotelPassengerDetailsPage {
 		
 		BookButn.click();
 		System.out.println("Book button clicked on Passenger details page");
-		if(DOBerror.isDisplayed())
-		{
-			changeDOBBtn.click();
-			changedate.click();
-			BookButn.click();
-		}
-		else {
-			System.out.println("no ERROR of DOB found");
-		}
+//		if(DOBerror.isDisplayed())
+//		{
+//			changeDOBBtn.click();
+//			changedate.click();
+//			BookButn.click();
+//		}
+//		else {
+//			System.out.println("no ERROR of DOB found");
+//		}
 	}
 	
 }

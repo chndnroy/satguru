@@ -45,7 +45,7 @@ public class HotelSearchPage {
 		Thread.sleep(5000);
 		SearchField.sendKeys(Keys.ENTER);
 		ChkInDateCal.click();
-		DropdownLib.Choosebyvalue(driver, childdrpDwnroom1, "1");
+//		DropdownLib.Choosebyvalue(driver, childdrpDwnroom1, "1");
 		NxtMnthBtn.click();
 		SelectDate1.click();
 		NationalityField.sendKeys(Country);
