@@ -92,13 +92,13 @@ public class Flightresult {
 	public void book(WebDriver driver) {
 		WaitStatementLib.explicitWaitForClickable(driver, 2, Bookbtn);
 		Bookbtn.click();
-//		try {
-//			Thread.sleep(5000);
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-//	
-//		FareChange.HandleFarechange(driver);
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	
+		FareChange.HandleFarechange(driver);
 		System.out.println("Book Button clicked");
 
 	}
